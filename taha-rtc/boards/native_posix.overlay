@@ -1,0 +1,5 @@
+/ {
+    rtc0: rtc {
+        status = "okay";
+    };
+};
