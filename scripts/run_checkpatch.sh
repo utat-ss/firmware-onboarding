@@ -2,7 +2,7 @@
 
 set -e
 
-source "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/../finch-flight-software-env.sh"
+source "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/../env.sh"
 
 files=$(find "${FINCH_FLIGHT_SOFTWARE_ROOT}" -type f \( -name "*.[ch]" \) ! -path "*/build/*")
 
