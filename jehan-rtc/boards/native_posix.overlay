@@ -1,5 +1,5 @@
 / {
     rtc0: rtc {
-        status = "disabled";
+        status = "okay";
     };
 };
