@@ -1,0 +1,53 @@
+cmake:
+  application:
+    configuration-dir: /home/zaraa/firmware-onboarding/zara-rtc
+    source-dir: /home/zaraa/firmware-onboarding/zara-rtc
+  board:
+    name: native_posix
+    qualifiers: native
+    revision: 
+  devicetree:
+    bindings-dirs:
+     - /home/zaraa/zephyr/dts/bindings
+    files:
+     - /home/zaraa/zephyr/boards/native/native_posix/native_posix.dts
+     - /home/zaraa/firmware-onboarding/zara-rtc/boards/native_posix.overlay
+    include-dirs:
+     - /home/zaraa/modules/hal/atmel/include
+     - /home/zaraa/modules/hal/gigadevice/include
+     - /home/zaraa/modules/hal/microchip/dts
+     - /home/zaraa/modules/hal/nuvoton/dts
+     - /home/zaraa/modules/hal/nxp/dts
+     - /home/zaraa/modules/hal/stm32/dts
+     - /home/zaraa/zephyr/include
+     - /home/zaraa/zephyr/include/zephyr
+     - /home/zaraa/zephyr/dts/common
+     - /home/zaraa/zephyr/dts/x86
+     - /home/zaraa/zephyr/dts/xtensa
+     - /home/zaraa/zephyr/dts/sparc
+     - /home/zaraa/zephyr/dts/riscv
+     - /home/zaraa/zephyr/dts/posix
+     - /home/zaraa/zephyr/dts/nios2
+     - /home/zaraa/zephyr/dts/arm64
+     - /home/zaraa/zephyr/dts/arm
+     - /home/zaraa/zephyr/dts/arc
+     - /home/zaraa/zephyr/dts
+    user-files:
+     - /home/zaraa/firmware-onboarding/zara-rtc/boards/native_posix.overlay
+  kconfig:
+    files:
+     - /home/zaraa/zephyr/boards/native/native_posix/native_posix_defconfig
+     - /home/zaraa/firmware-onboarding/zara-rtc/prj.conf
+    user-files:
+     - /home/zaraa/firmware-onboarding/zara-rtc/prj.conf
+  toolchain:
+    name: host
+    path: 
+  zephyr:
+    version: 4.0.0
+    zephyr-base: /home/zaraa/zephyr
+version: 0.1.0
+west:
+  command: /home/zaraa/.venv/bin/west build -b native_posix zara-rtc/ --pristine
+  topdir: /home/zaraa
+  version: 1.3.0
