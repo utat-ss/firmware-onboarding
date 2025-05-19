@@ -1,1 +1,0 @@
-"mcuboot":"/home/zaraa/bootloader/mcuboot":"/home/zaraa/bootloader/mcuboot/boot/zephyr/sysbuild"
