@@ -1,0 +1,7 @@
+/ {
+    rtc0: rtc@0 {
+        compatible = "zephyr,rtc-emul";
+        status = "okay";
+        reg = <0x0 0x1000>;  // <address size>
+    };
+};

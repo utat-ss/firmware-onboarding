@@ -1,0 +1,1 @@
+"mcuboot":"/Users/andyliu/Workspaces/UTAT_Space_Systems/Onboarding_Activity/bootloader/mcuboot":"/Users/andyliu/Workspaces/UTAT_Space_Systems/Onboarding_Activity/bootloader/mcuboot/boot/zephyr/sysbuild"
