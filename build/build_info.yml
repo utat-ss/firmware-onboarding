@@ -1,0 +1,50 @@
+cmake:
+  application:
+    configuration-dir: /Users/andyliu/Workspaces/UTAT_Space_Systems/Onboarding_Activity/firmware-onboarding/Andy-rtc
+    source-dir: /Users/andyliu/Workspaces/UTAT_Space_Systems/Onboarding_Activity/firmware-onboarding/Andy-rtc
+  board:
+    name: nucleo_g431rb
+    qualifiers: stm32g431xx
+    revision: 
+  devicetree:
+    bindings-dirs:
+     - /Users/andyliu/Workspaces/UTAT_Space_Systems/Onboarding_Activity/zephyr/dts/bindings
+    files:
+     - /Users/andyliu/Workspaces/UTAT_Space_Systems/Onboarding_Activity/zephyr/boards/st/nucleo_g431rb/nucleo_g431rb.dts
+    include-dirs:
+     - /Users/andyliu/Workspaces/UTAT_Space_Systems/Onboarding_Activity/modules/hal/atmel/include
+     - /Users/andyliu/Workspaces/UTAT_Space_Systems/Onboarding_Activity/modules/hal/gigadevice/include
+     - /Users/andyliu/Workspaces/UTAT_Space_Systems/Onboarding_Activity/modules/hal/microchip/dts
+     - /Users/andyliu/Workspaces/UTAT_Space_Systems/Onboarding_Activity/modules/hal/nuvoton/dts
+     - /Users/andyliu/Workspaces/UTAT_Space_Systems/Onboarding_Activity/modules/hal/nxp/dts
+     - /Users/andyliu/Workspaces/UTAT_Space_Systems/Onboarding_Activity/modules/hal/stm32/dts
+     - /Users/andyliu/Workspaces/UTAT_Space_Systems/Onboarding_Activity/zephyr/include
+     - /Users/andyliu/Workspaces/UTAT_Space_Systems/Onboarding_Activity/zephyr/include/zephyr
+     - /Users/andyliu/Workspaces/UTAT_Space_Systems/Onboarding_Activity/zephyr/dts/common
+     - /Users/andyliu/Workspaces/UTAT_Space_Systems/Onboarding_Activity/zephyr/dts/x86
+     - /Users/andyliu/Workspaces/UTAT_Space_Systems/Onboarding_Activity/zephyr/dts/xtensa
+     - /Users/andyliu/Workspaces/UTAT_Space_Systems/Onboarding_Activity/zephyr/dts/sparc
+     - /Users/andyliu/Workspaces/UTAT_Space_Systems/Onboarding_Activity/zephyr/dts/riscv
+     - /Users/andyliu/Workspaces/UTAT_Space_Systems/Onboarding_Activity/zephyr/dts/posix
+     - /Users/andyliu/Workspaces/UTAT_Space_Systems/Onboarding_Activity/zephyr/dts/nios2
+     - /Users/andyliu/Workspaces/UTAT_Space_Systems/Onboarding_Activity/zephyr/dts/arm64
+     - /Users/andyliu/Workspaces/UTAT_Space_Systems/Onboarding_Activity/zephyr/dts/arm
+     - /Users/andyliu/Workspaces/UTAT_Space_Systems/Onboarding_Activity/zephyr/dts/arc
+     - /Users/andyliu/Workspaces/UTAT_Space_Systems/Onboarding_Activity/zephyr/dts
+  kconfig:
+    files:
+     - /Users/andyliu/Workspaces/UTAT_Space_Systems/Onboarding_Activity/zephyr/boards/st/nucleo_g431rb/nucleo_g431rb_defconfig
+     - /Users/andyliu/Workspaces/UTAT_Space_Systems/Onboarding_Activity/firmware-onboarding/Andy-rtc/prj.conf
+    user-files:
+     - /Users/andyliu/Workspaces/UTAT_Space_Systems/Onboarding_Activity/firmware-onboarding/Andy-rtc/prj.conf
+  toolchain:
+    name: zephyr
+    path: /Users/andyliu/zephyr-sdk-0.17.0
+  zephyr:
+    version: 4.0.0
+    zephyr-base: /Users/andyliu/Workspaces/UTAT_Space_Systems/Onboarding_Activity/zephyr
+version: 0.1.0
+west:
+  command: /Users/andyliu/Workspaces/UTAT_Space_Systems/Onboarding_Activity/.venv/bin/west build -b nucleo_g431rb Andy-rtc/ --pristine
+  topdir: /Users/andyliu/Workspaces/UTAT_Space_Systems/Onboarding_Activity
+  version: 1.3.0

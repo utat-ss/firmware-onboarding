@@ -1,0 +1,2 @@
+# Load Zephyr board Kconfig descriptions.
+osource "/Users/andyliu/Workspaces/UTAT_Space_Systems/Onboarding_Activity/zephyr/boards/st/nucleo_g431rb/Kconfig"

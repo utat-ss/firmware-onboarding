@@ -1,0 +1,5 @@
+west:
+  command: /Users/andyliu/Workspaces/UTAT_Space_Systems/Onboarding_Activity/.venv/bin/west
+    build -b nucleo_g431rb Andy-rtc/ --pristine
+  topdir: /Users/andyliu/Workspaces/UTAT_Space_Systems/Onboarding_Activity
+  version: 1.3.0
