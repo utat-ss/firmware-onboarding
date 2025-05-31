@@ -1,5 +1,0 @@
-/ {
-    rtc0: rtc {
-        status = "disabled";
-    };
-};
